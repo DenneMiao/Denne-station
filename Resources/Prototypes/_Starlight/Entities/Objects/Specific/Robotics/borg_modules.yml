@@ -277,7 +277,7 @@
       state: icon-nt
   - type: ItemBorgModule
     hands:
-    - item: WeaponPistolPDW9TaserBorg
+    - item: WeaponPDW9TaserBorg
     - item: BorgStunbatonRechargeable
     - item: BorgHolocuffs
     - item: BorgFlashRechargeable

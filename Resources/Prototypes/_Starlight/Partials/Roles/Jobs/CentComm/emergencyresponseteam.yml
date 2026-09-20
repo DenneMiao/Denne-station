@@ -1,4 +1,0 @@
-- type: !PartialOnly startingGear
-  id: ERTMedicalGearArmed
-  equipment:
-    suitstorage: WeaponRifleIK60

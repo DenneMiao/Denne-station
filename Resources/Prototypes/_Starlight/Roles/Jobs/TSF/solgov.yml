@@ -52,7 +52,7 @@
     belt: ClothingBeltRetroOfficer
     id: SolGovPDAOfficer
     ears: ClothingHudTSF
-    pocket1: WeaponPistolMk58
+    pocket1: WeaponPistolTSFModel17
   storage:
     back:
       - Flash

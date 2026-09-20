@@ -4,8 +4,13 @@ namespace Content.Client.Weapons.Ranged.Systems;
 
 public sealed partial class GunSystem
 {
+    protected override void InitializeMagazine()
+    {
+        base.InitializeMagazine();
+        SubscribeLocalEvent<MagazineAmmoProviderComponent, UpdateAmmoCounterEvent>(OnMagazineAmmoUpdate);
+        SubscribeLocalEvent<MagazineAmmoProviderComponent, AmmoCounterControlEvent>(OnMagazineControl);
+    }
 
-    [SubscribeLocalEvent]
     private void OnMagazineAmmoUpdate(Entity<MagazineAmmoProviderComponent> ent, ref UpdateAmmoCounterEvent args)
     {
         var magEnt = GetMagazineEntity(ent);
@@ -23,7 +28,6 @@ public sealed partial class GunSystem
         RaiseLocalEvent(magEnt.Value, args, false);
     }
 
-    [SubscribeLocalEvent]
     private void OnMagazineControl(Entity<MagazineAmmoProviderComponent> ent, ref AmmoCounterControlEvent args)
     {
         var magEnt = GetMagazineEntity(ent);

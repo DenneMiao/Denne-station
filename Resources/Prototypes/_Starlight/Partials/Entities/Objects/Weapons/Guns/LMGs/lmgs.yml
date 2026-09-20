@@ -1,5 +1,0 @@
-- type: !PartialOnly entity
-  id: BaseWeaponLightMachineGun
-  components:
-  - type: GunHeat
-    heatPerShot: 2.5
