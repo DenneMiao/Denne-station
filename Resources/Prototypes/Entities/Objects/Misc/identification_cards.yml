@@ -1004,6 +1004,7 @@
     jobIcon: JobIconSyndicate
   - type: Item
     heldPrefix: black
+  - type: AgentIDCard
   - type: Access
     tags:
     - NuclearOperative
