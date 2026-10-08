@@ -240,7 +240,16 @@
   id: DogEmotes
 
 - type: Tag
+  id: Drone
+
+- type: Tag
+  id: DroneUsable
+
+- type: Tag
   id: DrinkCarton
+
+- type: Tag
+  id: DrinkMetamorphic
 
 - type: Tag
   id: DurandArmor
@@ -751,6 +760,9 @@
 
 - type: Tag
   id: StoveMachineBoard
+
+- type: Tag
+  id: StutterImmune
 
 - type: Tag
   id: SurgeryCompatibleArmor
